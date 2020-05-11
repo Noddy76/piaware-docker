@@ -13,7 +13,7 @@ spec:
     matchLabels:
       app: piaware
   replicas: 1
-  strategy: 
+  strategy:
     type: Recreate
   template:
     metadata:
