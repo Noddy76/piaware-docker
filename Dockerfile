@@ -47,4 +47,5 @@ RUN apt-get update && \
         libboost-system1.67.0 \
         libexpat1 \
         libreadline7 && \
-    dpkg -i /tmp/piaware_${VERSION}_amd64.deb
+    dpkg -i /tmp/piaware_${VERSION}_amd64.deb && \
+    rm -rf /var/lib/apt/lists/*
